@@ -29,6 +29,7 @@
 		"prettier-plugin-svelte": "^2.2.0",
 		"sass": "^1.37.0",
 		"svelte": "^3.34.0",
+		"svelte-bootstrap-icons": "^1.5.1",
 		"svelte-check": "^2.0.0",
 		"svelte-preprocess": "^4.7.4",
 		"tailwindcss": "^2.2.4",
@@ -37,7 +38,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/bebas-neue": "^4.5.0",
 		"@fontsource/fira-mono": "^4.2.2",
+		"@fontsource/saira-semi-condensed": "^4.5.0",
 		"@lukeed/uuid": "^2.0.0",
 		"canvas-particle-network": "^1.5.0",
 		"cookie": "^0.4.1",
