@@ -3,8 +3,6 @@
 </script>
 
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import ParticleNetwork from "canvas-particle-network";
 	import {
 		Github,
 		Envelope
@@ -15,19 +13,7 @@
 
 
 
-	onMount(async () => {
-		let canvasDiv = document.getElementById('particle-canvas');
-		let options = {
-			particleColor: '#550055',
-			background: "#330033",
-			interactive: true,
-			speed: 'slow',
-			density: 'high'
-		};
-		let particleCanvas = new ParticleNetwork(canvasDiv, options);
-		canvasDiv.classList.add('particle-canvas-loaded');
 
-	});
 </script>
 
 <svelte:head>
@@ -37,15 +23,26 @@
 <section>
 	<div class="container flex flex-col justify-center content-center">
 		<h1 class="title header-font font-semibold mx-auto">E²G</h1>
-		<h2 class="text-4xl mx-auto text-blue-50">Under Construction.</h2>
-		<div class="icons flex flex-row content-center justify-evenly">
-			<Github width=32 height=32/>
-			<Envelope width=32 height=32/>
-			<FallstopLogo/>
-			<LasprucaLogo/>
+		<h2 class="sub-title text-4xl mx-auto text-blue-50">Under Construction.</h2>
+		<div class="links-container flex flex-row content-center justify-center flex-wrap">
+			<a href="/" target="_none" rel=”noreferrer” class="link-wrapper">
+				Poster
+			</a>
+			<a href="/" target="_none" rel=”noreferrer” class="link-wrapper">
+				Presentation
+			</a>
+			<a href="https://github.com/Questionable-Research-Labs?q=ESquaredG&type=&language=&sort=" target="_none" rel=”noreferrer” class="link-wrapper">
+				Source Code
+			</a>
+			<a href="https://jmw.nz/" target="_none" rel=”noreferrer” class="link-wrapper">
+				About Jasper M-W
+			</a>
+			<a href="https://laspruca.nz/" target="_none" rel=”noreferrer” class="link-wrapper">
+				About Nathan Hare
+			</a>
 		</div>
 	</div>
-	<div id="particle-canvas"></div>
+
 
 </section>
 
@@ -65,24 +62,40 @@
 			-webkit-text-fill-color: transparent;
 			opacity: 0.5;
 			margin: 0 auto;
-
+			height: 25rem;
+			@media (max-width: 600px) {
+				font-size: 10rem;
+				margin-top: 1em;
+			}
 		}
-		.icons {
-			color: white;
+		.sub-title {
+			margin: 0 auto 2em auto;
+			@media (max-width: 600px) {
+				font-size: 1.5rem;
+				margin: 0 auto;
+			}
+			
+		}
+		.links-container {
+
+			text-align: center;
+			
+			
+			margin: 0 auto;
+			@media (max-width: 600px) {
+				flex-direction: column;
+			}
+			.link-wrapper {
+				margin: 1em;
+				display: block;
+				padding: 0.5em;
+				font-size: 1.25rem;
+				color: white;
+				border: white solid 5px;
+				background: rgba(227,124,255,0.1);
+
+			}
 		}
 	}
-	#particle-canvas {
-		width: 100vw;
-		height: 100vh;
-		overflow: hidden;
-		position: absolute !important;
-		top: 0;
-		left: 0;
-		z-index: -100;
-	}
-	.particle-canvas-loaded {
-		transition: all 0.5s ease;
-		opacity: 1;
 
-	}
 </style>
