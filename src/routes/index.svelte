@@ -25,10 +25,10 @@
 		<h1 class="title header-font font-semibold mx-auto">E²G</h1>
 		<h2 class="sub-title text-4xl mx-auto text-blue-50">Under Construction.</h2>
 		<div class="links-container flex flex-row content-center justify-center flex-wrap">
-			<a href="/" target="_none" rel=”noreferrer” class="link-wrapper">
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_none" rel=”noreferrer” class="link-wrapper">
 				Poster
 			</a>
-			<a href="/" target="_none" rel=”noreferrer” class="link-wrapper">
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_none" rel=”noreferrer” class="link-wrapper">
 				Presentation
 			</a>
 			<a href="https://github.com/Questionable-Research-Labs?q=ESquaredG&type=&language=&sort=" target="_none" rel=”noreferrer” class="link-wrapper">
@@ -91,7 +91,7 @@
 				padding: 0.5em;
 				font-size: 1.25rem;
 				color: white;
-				border: white solid 5px;
+				border: rgba(255, 255, 255, 0.8) solid 5px;
 				background: rgba(227,124,255,0.1);
 
 			}

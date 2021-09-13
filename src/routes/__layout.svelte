@@ -12,7 +12,7 @@
 	onMount(async () => {
 		let canvasDiv = document.getElementById('particle-canvas');
 		let options = {
-			particleColor: '#550055',
+			particleColor: '#990099',
 			background: "#330033",
 			interactive: true,
 			speed: 'slow',
