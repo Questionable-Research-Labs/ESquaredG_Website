@@ -93,3 +93,4 @@ node_modules
 /.svelte-kit
 /package
 build/
+.idea

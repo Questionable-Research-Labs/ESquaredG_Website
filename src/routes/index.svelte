@@ -8,12 +8,6 @@
 		Envelope
 	} from "svelte-bootstrap-icons";
 
-	import FallstopLogo from "../lib/icons/fallstop_logo.svelte";
-	import LasprucaLogo from "../lib/icons/laspruca_logo.svelte";
-
-
-
-
 </script>
 
 <svelte:head>
@@ -25,7 +19,7 @@
 		<h1 class="title header-font font-semibold mx-auto">E²G</h1>
 		<h2 class="sub-title text-4xl mx-auto text-blue-50">Under Construction.</h2>
 		<div class="links-container flex flex-row content-center justify-center flex-wrap">
-			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_none" rel=”noreferrer” class="link-wrapper">
+			<a href="/poster" target="_none" rel=”noreferrer” class="link-wrapper">
 				Poster
 			</a>
 			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_none" rel=”noreferrer” class="link-wrapper">

@@ -23,12 +23,15 @@
 
 	});
 </script>
+
+
+
 <main>
 	<slot></slot>
 	<div id="particle-canvas"></div>
 </main>
-<style lang="scss">
 
+<style lang="scss">
 	#particle-canvas {
 		width: 100vw;
 		height: 100vh;
@@ -38,6 +41,7 @@
 		left: 0;
 		z-index: -100;
 	}
+
 	.particle-canvas-loaded {
 		transition: all 0.5s ease;
 		opacity: 1;
