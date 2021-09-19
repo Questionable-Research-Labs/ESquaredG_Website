@@ -2,15 +2,19 @@
 
 @import "@fontsource/bebas-neue";
 @import "@fontsource/saira-semi-condensed";
+@import "@fontsource/fira-mono";
 @import 'scss-reset/_reset.scss';
 
+.math {
+	font-family: "Fira Mono", monospace;
+}
 
 :root,.normal-font {
-	font-family: "Saira Semi Condensed"; 
+	font-family: "Saira Semi Condensed", serif;
 	font-weight: 300;
 }
 .header-font {
-	font-family: "Bebas Neue";
+	font-family: "Bebas Neue", serif;
 }
 
 body {

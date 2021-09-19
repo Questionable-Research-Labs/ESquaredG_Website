@@ -27,7 +27,15 @@
 <div id="particle-canvas" />
 
 <style lang="scss">
-	#particle-canvas {
+	@import "../assets/style/colors";
+  :root {
+    --red: #{$red};
+    --blue: #{$blue};
+    --green: #{$green};
+    --yellow: #{$yellow};
+  }
+
+  #particle-canvas {
 		width: 100vw;
 		height: 100%;
 		overflow: hidden;

@@ -2,6 +2,8 @@
 	import a2d from '../../assets/graphics/Analog2Digital.svg';
 </script>
 
+<div class='title'>Background Info</div>
+
 <div class='section'>
 	<h1 class='section__title'>What is EEG</h1>
 	<p>
@@ -84,6 +86,6 @@
 
 <style lang='scss'>
   @use "../../assets/style/poster-content" with (
-  $color: #ea1c24,
+  $color: var(--red),
 );
 </style>

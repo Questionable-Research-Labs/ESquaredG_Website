@@ -39,6 +39,7 @@
 			justify-content: center;
 			align-items: center;
 			font-size: 30pt;
+			backdrop-filter: blur(5px);
 
 			&:hover {
 				transform: scale(1.1);
