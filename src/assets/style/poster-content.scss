@@ -1,10 +1,11 @@
 $color: white !default;
 
-@mixin title($underline-size: 0.5rem){
-  font-weight: bold;
-  font-size: 20pt;
+@mixin title($font-size, $underline-size: 0.5rem, $font-weight: bold) {
+  font-weight: $font-weight;
+  font-size: $font-size;
   position: relative;
   padding: 2rem 0;
+  text-align: center;
   text-decoration: underline;
   text-decoration-color: #ea1c24;
   text-decoration-thickness: $underline-size;
@@ -15,20 +16,46 @@ $color: white !default;
 
 .section {
   color: white;
-  padding: 2rem;
-  padding-top: 0;
+  padding: 0 2rem 2rem;
   font-size: 15pt;
+
   &__title {
-    @include title;
+    @include title(22pt);
   }
 
   &--sub {
     &__title {
-      @include title(0.3rem);
+      @include title(20pt, 0.3rem, normal);
+    }
+  }
+
+  &__content {
+    table {
+      width: 100%;
+
+      th {
+        font-size: 15pt;
+        font-weight: bold;
+      }
+
+      th, td {
+        padding: 1rem;
+        border: $color 2px solid;
+      }
+
+      td:nth-child(1) {
+        text-align: center;
+      }
     }
   }
 
   & ul {
     padding: 1rem 2rem;
+  }
+
+  img {
+    display: block;
+    width: 15rem;
+    margin: 0 auto;
   }
 }

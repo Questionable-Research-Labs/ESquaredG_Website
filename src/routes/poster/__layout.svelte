@@ -5,8 +5,8 @@
 
 <header>
 	<div class=''>
-		<a sveltekit:prefetch class='title header-font font-semibold mx-auto' href='/'><img src={logo}
-																																												alt='E square G logo'></a>
+		<a sveltekit:prefetch class='title' href='/'><img src={logo}
+																											alt='E square G logo'></a>
 	</div>
 	<nav>
 		<a href='/' sveltekit:prefetch>Home</a>
@@ -19,26 +19,30 @@
 </DefaultLayout>
 
 <style lang='scss'>
-	@import "../../assets/style/colors.scss";
+  @import "../../assets/style/colors.scss";
 
   header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding: 1rem;
-		max-width: 100vw;
+    max-width: 100vw;
     color: white;
-		align-items: center;
-		background-color: $purple;
+    align-items: center;
+    background-color: $purple;
 
-		img {
-			width: 100px;
-			height: 100px;
-		}
+    img {
+      width: 100px;
+      height: 100px;
+    }
 
-		nav {
-			display: flex;
-			gap: 5rem;
-		}
+    nav {
+      display: flex;
+      gap: 5rem;
+			a {
+        color: white;
+        font-size: 15pt;
+			}
+    }
   }
 </style>

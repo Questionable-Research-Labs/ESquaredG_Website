@@ -1,5 +1,9 @@
-<div class="section">
-	<h1 class="section__title">What is EEG</h1>
+<script lang='ts'>
+	import a2d from '../../assets/graphics/Analog2Digital.svg';
+</script>
+
+<div class='section'>
+	<h1 class='section__title'>What is EEG</h1>
 	<p>
 		Electroencephalography or EEG henceforth, is a method of measuring brain activity. It works by
 		measuring the voltage between two points on the skull, typically using electrodes, probes
@@ -10,9 +14,10 @@
 	</p>
 </div>
 
-<div class="section">
-	<h1 class="section__title">Analog and Digital Converters</h1>
-	<div class="section__content">
+<div class='section'>
+	<h1 class='section__title'>Analog and Digital Converters</h1>
+	<div class='section__content'>
+		<img src={a2d} alt='Analog to digital conversion'>
 		<p>
 			One major component of EEG is the process of converting the analog data captured by the probes
 			into digital signals that can be handled by the brain. Computers work using a binary system to
@@ -27,9 +32,9 @@
 		</p>
 	</div>
 
-	<div class="section--sub">
-		<h1 class="section--sub__title">Why those converters are so expensive</h1>
-		<div class="section-content">
+	<div class='section--sub'>
+		<h1 class='section--sub__title'>Why those converters are so expensive</h1>
+		<div class='section__content'>
 			<p>
 				Analog to Digital converters aren't actually hugely expensive, but the ones used for EEG are
 				very expensive for a number of reasons:
@@ -44,10 +49,41 @@
 			</ul>
 		</div>
 	</div>
+
+	<div class='section'>
+		<h1 class='section__title'>
+			Electronic component reference
+		</h1>
+
+		<div class='section__content'>
+			<table>
+				<tr>
+					<th>Component</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>Multiplexer<br>(HW-178)</td>
+					<td>Analog switch that connects one input selected from several inputs to a single output.</td>
+				</tr>
+				<tr>
+					<td>Instrumental Amplifier<br>(AD620)</td>
+					<td>Boosts the EEG signals up so they are more noise tolerant (because the signal is more powerful)</td>
+				</tr>
+				<tr>
+					<td>Microcontroller<br>(Arduino Due)</td>
+					<td>Relatively expensive single-board computer that can run code and output faster than most others available.</td>
+				</tr>
+				<tr>
+					<td>Microcontroller<br>(ESP8266)</td>
+					<td>Relatively cheap single-board computer that runs very fast, but with limited output options.</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 </div>
 
-<style lang="scss">
-@use "../../assets/style/poster-content" with (
+<style lang='scss'>
+  @use "../../assets/style/poster-content" with (
   $color: #ea1c24,
 );
 </style>

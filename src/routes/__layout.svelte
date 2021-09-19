@@ -22,13 +22,14 @@
 
 <main>
 	<slot />
-	<div id="particle-canvas" />
 </main>
+
+<div id="particle-canvas" />
 
 <style lang="scss">
 	#particle-canvas {
 		width: 100vw;
-		height: 100vh;
+		height: 100%;
 		overflow: hidden;
 		position: absolute !important;
 		top: 0;
