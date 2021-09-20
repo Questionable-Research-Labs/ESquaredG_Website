@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>E2G</title>
+	<title>E&sup;G</title>
 </svelte:head>
 
 <section>

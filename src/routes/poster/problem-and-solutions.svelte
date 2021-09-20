@@ -9,6 +9,10 @@
 	import slnb from "../../assets/graphics/MultiplexPower.svg";
 </script>
 
+<svelte:head>
+	<title>E&sup2;G | Problem and Solution</title>
+</svelte:head>
+
 <h1 class='title'>Problem and Solutions</h1>
 
 <div class='section'>

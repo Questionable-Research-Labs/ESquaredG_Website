@@ -6,6 +6,10 @@
 	import a2d from '../../assets/graphics/Analog2Digital.svg';
 </script>
 
+<svelte:head>
+	<title>E&sup2;G | Background Info</title>
+</svelte:head>
+
 <div class='title'>Background Info</div>
 
 <div class='section'>
@@ -77,7 +81,9 @@
 				</tr>
 				<tr>
 					<td>Microcontroller<br>(Arduino Due)</td>
-					<td>Relatively expensive single-board computer that can run code and output faster than most others available.</td>
+					<td>Relatively expensive single-board computer that can run code and output faster than most others
+						available.
+					</td>
 				</tr>
 				<tr>
 					<td>Microcontroller<br>(ESP8266)</td>

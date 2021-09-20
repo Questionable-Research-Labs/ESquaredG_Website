@@ -7,6 +7,8 @@
     import headsetWiringDiagram from "../../assets/images/headsetWiringDiagram.png";
 </script>
 
+<svelte:head><title>E&sup2;G | Now and in the Future</title></svelte:head>
+
 <div class="title">Now and in the Future</div>
 
 <div class="section">

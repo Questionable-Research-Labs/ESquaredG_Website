@@ -2,6 +2,10 @@
 	export const prerender = true;
 </script>
 
+<svelte:head>
+	<title>E&sup2;G | Poster</title>
+</svelte:head>
+
 <div class="poster">
 	<a href="/poster/background-info" sveltekit:prefetch class="poster__section bg-info">
 		Background Info
