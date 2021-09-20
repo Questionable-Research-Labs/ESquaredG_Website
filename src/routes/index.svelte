@@ -2,14 +2,6 @@
 	export const prerender = true;
 </script>
 
-<script lang="ts">
-	import {
-		Github,
-		Envelope
-	} from "svelte-bootstrap-icons";
-
-</script>
-
 <svelte:head>
 	<title>E2G</title>
 </svelte:head>

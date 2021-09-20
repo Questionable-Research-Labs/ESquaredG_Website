@@ -3,17 +3,21 @@
 </script>
 
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { afterUpdate, onMount } from 'svelte';
 	import '../global.scss';
 	import { browser } from '$app/env';
 	import { CONFIG as PARTICLE_OPTIONS } from '$lib/particleConfig';
-	onMount(async () => {
+
+	const loadParticle = async () => {
 		if (browser) {
 			console.log("Loading particle js")
 			let { particlesJS } = await import('tsparticles');
 			await particlesJS('particle-canvas', PARTICLE_OPTIONS);
 		}
-	});
+	};
+
+	onMount(loadParticle);
+	afterUpdate(loadParticle);
 </script>
 
 <main>
