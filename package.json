@@ -45,6 +45,7 @@
 		"canvas-particle-network": "^1.5.0",
 		"cookie": "^0.4.1",
 		"particles.js": "^2.0.0",
-		"scss-reset": "^1.2.2"
+		"scss-reset": "^1.2.2",
+		"tsparticles": "^1.35.0"
 	}
 }

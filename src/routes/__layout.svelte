@@ -3,20 +3,15 @@
 </script>
 
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, afterUpdate } from 'svelte';
 	import '../global.scss';
-	import ParticleNetwork from 'canvas-particle-network';
+	import { browser } from '$app/env';
+	import { CONFIG as PARTICLE_OPTIONS } from '$lib/particleConfig';
 	onMount(async () => {
-		let canvasDiv = document.getElementById('particle-canvas');
-		let options = {
-			particleColor: '#990099',
-			background: '#330033',
-			interactive: true,
-			speed: 'slow',
-			density: 'high'
-		};
-		let particleCanvas = new ParticleNetwork(canvasDiv, options);
-		canvasDiv.classList.add('particle-canvas-loaded');
+		if (browser) {
+			let { particlesJS } = await import('tsparticles');
+			await particlesJS('particle-canvas', PARTICLE_OPTIONS);
+		}
 	});
 </script>
 
@@ -24,18 +19,18 @@
 	<slot />
 </main>
 
-<div id="particle-canvas" />
+<div id="particle	-canvas" />
 
 <style lang="scss">
-	@import "../assets/style/colors";
-  :root {
-    --red: #{$red};
-    --blue: #{$blue};
-    --green: #{$green};
-    --yellow: #{$yellow};
-  }
+	@import '../assets/style/colors';
+	:root {
+		--red: #{$red};
+		--blue: #{$blue};
+		--green: #{$green};
+		--yellow: #{$yellow};
+	}
 
-  #particle-canvas {
+	#particle-canvas {
 		width: 100vw;
 		height: 100%;
 		overflow: hidden;
@@ -43,6 +38,9 @@
 		top: 0;
 		left: 0;
 		z-index: -100;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
 	}
 
 	.particle-canvas-loaded {
