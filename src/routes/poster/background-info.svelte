@@ -1,3 +1,7 @@
+<script lang='ts' context='module'>
+	export const prerender = true;
+</script>
+
 <script lang='ts'>
 	import a2d from '../../assets/graphics/Analog2Digital.svg';
 </script>

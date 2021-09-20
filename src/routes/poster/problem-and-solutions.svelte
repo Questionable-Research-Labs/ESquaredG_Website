@@ -1,7 +1,12 @@
+<script lang='ts' context='module'>
+	export const prerender = true;
+</script>
+
 <script lang='ts'>
 	import is from '../../assets/graphics/IndustryStandard.svg';
 	import diy from '../../assets/graphics/DIYSingleChannel.svg';
 	import slna from '../../assets/graphics/MultiplexSignal.svg';
+	import slnb from "../../assets/graphics/MultiplexPower.svg";
 </script>
 
 <h1 class='title'>Problem and Solutions</h1>
@@ -123,6 +128,7 @@
 	<div class='section--sub'>
 		<div class='section--sub__title'>Many Probes to Many Amplifiers to some Multiplexers Channels to One A->D</div>
 		<div class='section--sub__content'>
+			<img src={slnb} alt='Using a multiplexer over power' class='right'>
 			<p>
 				This is the more complicated solution, but with a vastly increased theoretical limit. Instead of using the
 				multiplexer to switch between the inputs, it is possible to use it in reverse as a “demultiplexer”, and use it

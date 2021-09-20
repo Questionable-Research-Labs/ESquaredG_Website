@@ -1,3 +1,7 @@
+<script lang='ts' context='module'>
+	export const prerender = true;
+</script>
+
 <script lang="ts">
     import smallScaleAmpMultiTesting from "../../assets/images/smallScaleAmpMultiTesting.jpg";
     import headsetWiringDiagram from "../../assets/images/headsetWiringDiagram.png";

@@ -3,12 +3,13 @@
 </script>
 
 <script lang="ts">
-	import { onMount, afterUpdate } from 'svelte';
+	import { onMount } from 'svelte';
 	import '../global.scss';
 	import { browser } from '$app/env';
 	import { CONFIG as PARTICLE_OPTIONS } from '$lib/particleConfig';
 	onMount(async () => {
 		if (browser) {
+			console.log("Loading particle js")
 			let { particlesJS } = await import('tsparticles');
 			await particlesJS('particle-canvas', PARTICLE_OPTIONS);
 		}
@@ -17,9 +18,9 @@
 
 <main>
 	<slot />
+	<div id="particle-canvas" />
 </main>
 
-<div id="particle	-canvas" />
 
 <style lang="scss">
 	@import '../assets/style/colors';
@@ -31,7 +32,7 @@
 	}
 
 	#particle-canvas {
-		width: 100vw;
+		width: 100%;
 		height: 100%;
 		overflow: hidden;
 		position: absolute !important;
@@ -43,8 +44,7 @@
 		box-sizing: border-box;
 	}
 
-	.particle-canvas-loaded {
-		transition: all 0.5s ease;
-		opacity: 1;
+	main {
+		position: relative;
 	}
 </style>

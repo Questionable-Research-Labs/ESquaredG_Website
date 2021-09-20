@@ -1,3 +1,7 @@
+<script lang='ts' context='module'>
+	export const prerender = true;
+</script>
+
 <div class="poster">
 	<a href="/poster/background-info" sveltekit:prefetch class="poster__section bg-info">
 		Background Info
