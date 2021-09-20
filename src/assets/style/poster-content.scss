@@ -24,7 +24,7 @@ $color: white !default;
 
 .section {
   color: white;
-  padding: 0 2rem 2rem;
+  padding: 0 1rem 2rem;
   font-size: 15pt;
 
   &__title {
@@ -63,22 +63,70 @@ $color: white !default;
 
   h2 {
     font-weight: bold;
+    font-size: 1.5rem;
   }
 
   & ul {
-    padding: 1rem 2rem;
+    padding: 1rem 0 1rem 2rem;
     li {
-      list-style: disc;
+      list-style: none;
+      &:before {
+        display: inline-block;
+        content: "-";
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+    &.dash {
+      margin-left: 0;
+      padding-left: 1em;
     }
   }
-
   img {
     display: block;
     width: 15rem;
     margin: 0 auto;
-
+    &.large {
+      width: 50vw;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
     &.right {
       float: right;
+    }
+  }
+  .intrinsic-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+
+    /* 16x9 Aspect Ratio */
+    &.r16x9 {
+      padding-bottom: 28.125%;
+      @media (max-width: 600px) {
+        padding-bottom: 56.25%;
+      }
+    }
+    
+    /* 4x3 Aspect Ratio */
+    &.r4x3 {
+      padding-bottom: 37.5%;
+      @media (max-width: 600px) {
+        padding-bottom: 75%;
+      }
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }
