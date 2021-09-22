@@ -25,13 +25,13 @@
 </div>
 
 <style lang="scss">
-	@import '../assets/style/colors';
+	@import '../../assets/style/colors';
 
 	.poster {
 		color: red;
 		display: grid;
-		width: 100vw;
-		height: 100vh;
+		width: 100%;
+		height: 100%;
 		gap: 5rem;
 		overflow: hidden;
 		grid-template-areas:

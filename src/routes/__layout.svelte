@@ -33,6 +33,7 @@
 		--blue: #{$blue};
 		--green: #{$green};
 		--yellow: #{$yellow};
+		--background-blur: 0px;
 	}
 
 	#particle-canvas {
@@ -40,6 +41,7 @@
 		height: 100%;
 		overflow: hidden;
 		position: absolute !important;
+		filter: blur(var(--background-blur));
 		top: 0;
 		left: 0;
 		z-index: -100;
