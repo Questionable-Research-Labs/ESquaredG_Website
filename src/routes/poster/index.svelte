@@ -31,7 +31,7 @@
 		color: red;
 		display: grid;
 		width: 100%;
-		height: 100%;
+		height: 95vh;
 		gap: 5rem;
 		overflow: hidden;
 		grid-template-areas:

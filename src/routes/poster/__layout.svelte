@@ -36,7 +36,6 @@
 	@import '../../assets/style/colors.scss';
 
 	main {
-		min-height: 100vh;
 		header {
 			nav {
 				display: flex;
@@ -58,9 +57,6 @@
 					height: 2rem;
 				}
 			}
-		}
-		DefaultLayout {
-			height: 100%;
 		}
 	}
 </style>

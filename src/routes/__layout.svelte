@@ -21,7 +21,9 @@
 </script>
 
 <main>
-	<slot />
+	<div class="content">
+		<slot />
+	</div>
 	<div id="particle-canvas" />
 </main>
 
@@ -49,8 +51,11 @@
 		margin: 0;
 		box-sizing: border-box;
 	}
-
-	main {
-		position: relative;
+	.content {
+		display: block;
+		width: 100%;
+		height: 100%;
+		
 	}
+
 </style>
