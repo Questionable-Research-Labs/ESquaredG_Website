@@ -6,7 +6,10 @@
 	import { afterUpdate } from 'svelte';
 	let inRoot: boolean = $page.path == '/poster';
 	afterUpdate(() => {
-		inRoot = $page.path == '/poster';
+		inRoot =
+			$page.path == '/info/poster' ||
+			$page.path == '/info/presentation' ||
+			$page.path == '/info/presentation';
 	});
 </script>
 
