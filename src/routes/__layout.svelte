@@ -21,7 +21,9 @@
 </script>
 
 <main>
-	<slot />
+	<div class="content">
+		<slot />
+	</div>
 	<div id="particle-canvas" />
 </main>
 
@@ -33,6 +35,7 @@
 		--blue: #{$blue};
 		--green: #{$green};
 		--yellow: #{$yellow};
+		--background-blur: 0px;
 	}
 
 	#particle-canvas {
@@ -40,6 +43,7 @@
 		height: 100%;
 		overflow: hidden;
 		position: absolute !important;
+		filter: blur(var(--background-blur));
 		top: 0;
 		left: 0;
 		z-index: -100;
@@ -47,8 +51,11 @@
 		margin: 0;
 		box-sizing: border-box;
 	}
-
-	main {
-		position: relative;
+	.content {
+		display: block;
+		width: 100%;
+		height: 100%;
+		
 	}
+
 </style>

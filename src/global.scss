@@ -1,27 +1,76 @@
 /* Write your global styles here, in PostCSS syntax */
 
-@import "@fontsource/bebas-neue";
-@import "@fontsource/saira-semi-condensed";
-@import "@fontsource/fira-mono";
+@import '@fontsource/bebas-neue';
+@import '@fontsource/saira-semi-condensed';
+@import '@fontsource/fira-mono';
 @import 'scss-reset/_reset.scss';
 
 .math {
-	font-family: "Fira Mono", monospace;
+	font-family: 'Fira Mono', monospace;
 }
 
-:root,.normal-font {
-	font-family: "Saira Semi Condensed", serif;
+:root,
+.normal-font {
+	font-family: 'Saira Semi Condensed', serif;
 	font-weight: 300;
 }
 .header-font {
-	font-family: "Bebas Neue", serif;
+	font-family: 'Bebas Neue', serif;
 }
 
 body {
 	background: #330033;
-	overflow-x: none;
+	overflow-x: hidden;
+	min-height: 100vh;
 }
+
 
 a {
 	text-decoration: none;
+}
+
+.intrinsic-container {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	width: 50%;
+	margin: 0 auto;
+	@media (max-width: 600px) {
+		width: 100%;
+	}
+
+	&.large {
+		width: 80%;
+	}
+
+	/* 16x9 Aspect Ratio */
+	&.r16x9 {
+		padding-bottom: 28.125%;
+		@media (max-width: 600px) {
+			padding-bottom: 56.25%;
+		}
+
+		&.large {
+			padding-bottom: 45%;
+		}
+	}
+
+	/* 4x3 Aspect Ratio */
+	&.r4x3 {
+		padding-bottom: 37.5%;
+		@media (max-width: 600px) {
+			padding-bottom: 75%;
+		}
+
+		&.large {
+			width: 30%;
+		}
+	}
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
