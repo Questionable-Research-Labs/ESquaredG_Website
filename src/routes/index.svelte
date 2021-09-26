@@ -11,9 +11,9 @@
 		<h1 class="title header-font">E²G</h1>
 		<h2 class="sub-title">Next Gen EEG Headsets.</h2>
 		<div class="links-container">
-			<a sveltekit:prefetch href="/poster" class="link-wrapper"> Poster </a>
-			<a href="/presentation" rel="”noreferrer”" class="link-wrapper"> Presentation </a>
-			<a sveltekit:prefetch href="/video" class="link-wrapper"> Video </a>
+			<a sveltekit:prefetch href="/info/poster" class="link-wrapper"> Poster </a>
+			<a href="/info/presentation" rel="”noreferrer”" class="link-wrapper"> Presentation </a>
+			<a sveltekit:prefetch href="/info/video" class="link-wrapper"> Video </a>
 
 			<a
 				href="https://github.com/Questionable-Research-Labs?q=ESquaredG&type=&language=&sort="

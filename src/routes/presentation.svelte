@@ -1,4 +1,7 @@
 <script>
 	import { goto } from '$app/navigation';
-	goto('/info/presentation');
+	import { browser } from '$app/env';
+	if (browser) {
+		goto('/info/presentation');
+	}
 </script>

@@ -3,10 +3,10 @@
 </script>
 
 <script lang='ts'>
-	import is from '../../assets/graphics/IndustryStandard.svg';
-	import diy from '../../assets/graphics/DIYSingleChannel.svg';
-	import slna from '../../assets/graphics/MultiplexSignal.svg';
-	import slnb from "../../assets/graphics/MultiplexPower.svg";
+	import is from '../../../assets/graphics/IndustryStandard.svg';
+	import diy from '../../../assets/graphics/DIYSingleChannel.svg';
+	import slna from '../../../assets/graphics/MultiplexSignal.svg';
+	import slnb from "../../../assets/graphics/MultiplexPower.svg";
 </script>
 
 <svelte:head>
@@ -176,7 +176,7 @@
 </div>
 
 <style lang='scss'>
-  @use "../../assets/style/poster-content" with (
+  @use "../../../assets/style/poster-content" with (
 		$color: var(--green)
 	);
 </style>

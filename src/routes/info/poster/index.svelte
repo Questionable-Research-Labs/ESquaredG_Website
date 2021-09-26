@@ -7,25 +7,25 @@
 </svelte:head>
 
 <div class="poster">
-	<a href="/poster/background-info" sveltekit:prefetch class="poster__section bg-info">
+	<a href="/info/poster/background-info" sveltekit:prefetch class="poster__section bg-info">
 		Background Info
 	</a>
 
-	<a href="/poster/problem-and-solutions" sveltekit:prefetch class="poster__section prblm-sln">
+	<a href="/info/poster/problem-and-solutions" sveltekit:prefetch class="poster__section prblm-sln">
 		Problem and Solutions
 	</a>
 
-	<a href="/poster/implementation-details" sveltekit:prefetch class="poster__section impl-details">
+	<a href="/info/poster/implementation-details" sveltekit:prefetch class="poster__section impl-details">
 		Implementation Details
 	</a>
 
-	<a href="/poster/now-and-in-the-future" sveltekit:prefetch class="poster__section now-fut">
+	<a href="/info/poster/now-and-in-the-future" sveltekit:prefetch class="poster__section now-fut">
 		Now and in the Future
 	</a>
 </div>
 
 <style lang="scss">
-	@import '../../assets/style/colors';
+	@import '../../../assets/style/colors';
 
 	.poster {
 		color: red;

@@ -3,8 +3,8 @@
 </script>
 
 <script lang="ts">
-    import smallScaleAmpMultiTesting from "../../assets/images/smallScaleAmpMultiTesting.jpg";
-    import headsetWiringDiagram from "../../assets/images/headsetWiringDiagram.png";
+    import smallScaleAmpMultiTesting from "../../../assets/images/smallScaleAmpMultiTesting.jpg";
+    import headsetWiringDiagram from "../../../assets/images/headsetWiringDiagram.png";
 </script>
 
 <svelte:head><title>E&sup2;G | Now and in the Future</title></svelte:head>
@@ -133,7 +133,7 @@
 </div>
 
 <style lang="scss">
-	@use "../../assets/style/poster-content" with (
+	@use "../../../assets/style/poster-content" with (
         $color: var(--yellow),
     );
 </style>

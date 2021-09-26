@@ -3,7 +3,7 @@
 </script>
 
 <script lang='ts'>
-	import a2d from '../../assets/graphics/Analog2Digital.svg';
+	import a2d from '../../../assets/graphics/Analog2Digital.svg';
 </script>
 
 <svelte:head>
@@ -97,7 +97,7 @@
 </div>
 
 <style lang='scss'>
-  @use "../../assets/style/poster-content" with (
+  @use "../../../assets/style/poster-content" with (
   $color: var(--red),
 );
 </style>

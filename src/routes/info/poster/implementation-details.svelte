@@ -3,8 +3,8 @@
 </script>
 
 <script lang='ts'>
-	import graph1 from "../../assets/graphics/DataProcessing1.svg";
-	import graph2 from "../../assets/graphics/DataProcessing2.svg";
+	import graph1 from "../../../assets/graphics/DataProcessing1.svg";
+	import graph2 from "../../../assets/graphics/DataProcessing2.svg";
 </script>
 
 <svelte:head>
@@ -131,7 +131,7 @@
 </div>
 
 <style lang='scss'>
-  @use "../../assets/style/poster-content" with (
+  @use "../../../assets/style/poster-content" with (
 		$color: var(--blue)
 	);
 </style>
