@@ -9,6 +9,7 @@
 		inRoot =
 			$page.path == '/info/poster' ||
 			$page.path == '/info/presentation' ||
+			$page.path == '/info/video' ||
 			$page.path == '/info/presentation';
 	});
 </script>
@@ -17,11 +18,11 @@
 	<header>
 		<nav>
 			<div>
-				<img class="back-icon" src={BackButton} alt="back" />
+				
 				{#if inRoot}
-					<a href="/" sveltekit:prefetch>Back to Home</a>
+					<a href="/" sveltekit:prefetch><img class="back-icon" src={BackButton} alt="back" />Back to Home</a>
 				{:else}
-					<a href="/poster" sveltekit:prefetch>Back to Poster</a>
+					<a href="/poster" sveltekit:prefetch><img class="back-icon" src={BackButton} alt="back" />Back to Poster</a>
 				{/if}
 			</div>
 			<a sveltekit:prefetch class="title" href="/">

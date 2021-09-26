@@ -22,6 +22,7 @@ body {
 	background: #330033;
 	overflow-x: hidden;
 	min-height: 100vh;
+	color: white;
 }
 
 
@@ -40,18 +41,20 @@ a {
 	}
 
 	&.large {
-		width: 80%;
+		@media (min-width: 600px) {
+			width: 75%;
+		}
 	}
 
 	/* 16x9 Aspect Ratio */
 	&.r16x9 {
 		padding-bottom: 28.125%;
 		@media (max-width: 600px) {
-			padding-bottom: 56.25%;
+			padding-bottom: 56.25% !important;
 		}
 
 		&.large {
-			padding-bottom: 45%;
+			padding-bottom: 42%;
 		}
 	}
 
@@ -59,11 +62,11 @@ a {
 	&.r4x3 {
 		padding-bottom: 37.5%;
 		@media (max-width: 600px) {
-			padding-bottom: 75%;
+			padding-bottom: 75% !important;
 		}
 
 		&.large {
-			width: 30%;
+			width: 56.25%;
 		}
 	}
 	iframe {
